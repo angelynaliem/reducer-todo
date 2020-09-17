@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&family=Raleway&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: gainsboro;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    color: darkslategrey;
+    font-family: 'Caveat', cursive;
+    font-size: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+p,
+span {
+    color: darkslategrey;
+    font-family: 'Caveat', cursive;
 }
 
-.App-link {
-  color: #61dafb;
+.mainDiv {
+    /* font-family: 'Caveat', cursive; */
+    text-align: center;
+    padding: 5%;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formDiv {
+    display: flex;
+    margin-top: 7.5%;
+    margin-bottom: 7.5%;
 }
+
+.inputStyle {
+    padding: 1%;
+}
+
+
+
+.item {
+    cursor: pointer;
+
+}
+
+.item.completed {
+    text-decoration: line-through;
+}
+
+form {
+    width: 100vw;
+}
+
+button {
+    background-color: darkslategrey;
+    border: 1px solid yellowgreen;
+    color: white;
+    padding: 1%;
+    margin-left: 2.5%;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+button:hover {
+    background-color: seagreen;
+}
+
+input::placeholder {
+    color: grey;
+    opacity: 0.5;
+}
+
+.clearButton {
+    margin-top: 5%;
+}
+
+form > input {
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid darkslategray;
+    background-color: gainsboro;
+    width: 25%;
+}
+
