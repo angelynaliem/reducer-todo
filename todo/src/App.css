@@ -58,6 +58,10 @@ span {
     text-decoration: line-through;
 }
 
+.item.overdue {
+    color: red;
+}
+
 form {
     width: 100vw;
 }
@@ -94,3 +98,7 @@ form > input {
     width: 25%;
 }
 
+.itemDue {
+  padding: 1%;
+  justify-content: center;
+}

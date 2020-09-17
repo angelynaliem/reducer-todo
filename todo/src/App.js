@@ -6,7 +6,8 @@ import {
   initialState,
   ADD_TODO_ITEM,
   TOGGLE_COMPLETED_TODO_ITEM,
-  CLEAR_ALL_COMPLETED_ITEMS
+  CLEAR_ALL_COMPLETED_ITEMS,
+  OVERDUE,
 } from './reducer';
 
 import TodoList from './Components/TodoList';
@@ -31,6 +32,10 @@ const App = () => {
     dispatch( { type: CLEAR_ALL_COMPLETED_ITEMS } )
   }
 
+  const overdue = itemTimestampDue => {
+    dispatch( { type: OVERDUE, payload: itemTimestampDue } )
+  }
+
   return (
     <div className="mainDiv">
   
@@ -41,6 +46,7 @@ const App = () => {
       todoItems={state.todoItems}
       toggleTodoItem={toggleTodoItem}
       clearCompletedItems={clearCompletedItems}
+      overdue={overdue}
       />
     </div>
   )
